@@ -5,8 +5,10 @@
 */
 
 html {
-    /* background-image: linear-gradient(rgb(0, 89, 255), rgb(72, 129, 235), rgb(0, 89, 255)); */
+    /* background-image: linear-gradient(rgb(0, 89, 255), rgb(72, 129, 235), rgb(0, 89, 255)); 
     background-color: rgb(88, 88, 88);
+    */
+    background-color: gray;
 }
 
 html,
@@ -17,6 +19,11 @@ body {
 /* 
     Nav styles
 */
+
+header{
+    margin-left: 3em;
+    margin-right: 3em;
+}
 
 header>nav {
     display: table;
@@ -117,7 +124,7 @@ section.img img {
 */
 
 footer {
-    width: 100%;
+    width: 94.3%;
     text-align: center;
     background-color: gray;
     color: white;
@@ -125,6 +132,8 @@ footer {
     padding-bottom: 1em;
     position: fixed;
     bottom: 0;
+    margin-left: 3em;
+    margin-right: 3em;
 }
 
 footer#non-bottom {
