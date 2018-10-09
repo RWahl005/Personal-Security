@@ -2,20 +2,13 @@
 
 html {
     /* For the html */
-background-color: rgb(88, 88, 88);
-}
-
-body h1 {
-    color: rgb(105, 105, 105);
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 50px;
+    background-color: rgb(88, 88, 88);
 }
 
 header>nav {
     display: table;
     width: 100%;
-    letter-spacing: 2px;
+    margin-bottom: 0.01em;
 }
 
 header>nav a {
@@ -32,6 +25,22 @@ header>nav>ul>li>a {
     display: block;
 }
 
+header>nav>ul>li>a:link,
+header>nav>ul>li>a:visited {
+    color: white;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+header>nav>ul>li>a.active {
+    background-color: rgb(146, 143, 143);
+}
+
+header>nav>ul>li>a:hover {
+    background-color: darkgray;
+    padding: 15px;
+}
+
 header>nav>ul>li {
     display: table-cell;
     text-align: center;
@@ -39,19 +48,6 @@ header>nav>ul>li {
 
 header>nav>ul {
     list-style-type: none;
-}
-
-nav a:link,
-nav a:visited {
-    color: burlywood;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-nav a:active,
-nav a:hover {
-    color: cadetblue;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: crimson;
 }
 
 
@@ -64,30 +60,33 @@ body {
     height: 100%;
 }
 
+
 body h2 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Sans', Arial, sans-serif;
-    padding-left: 4em;
+    padding-left: 6em;
     font-size: 30px;
+    padding-top: 25px;
 }
 
 body p {
-    margin-left: 3em;
-    margin-right: 3em;
-    padding-left: 6em;
-    padding-right: 8em;
+    font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
+    margin-left: 5em;
+    margin-right: 5em;
+    padding-top: 18px;
+    text-indent: 2em;
 }
 
 body p.rightpad {
-    margin-left: 3em;
+    margin-left: 5em;
     margin-right: 3em;
-    padding-right: 40em;
+    padding-right: 37em;
 }
 
 body img {
     float: right;
-    margin-right: 13em;
-    margin-top: 8em;
+    margin-right: 12em;
+    margin-top: 5em;
 }
 
 footer {
