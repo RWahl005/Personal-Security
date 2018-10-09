@@ -20,7 +20,7 @@ body {
     Nav styles
 */
 
-header{
+header {
     margin-left: 3em;
     margin-right: 3em;
 }
@@ -69,13 +69,13 @@ header>nav>ul>li {
 header>nav>ul {
     list-style-type: none;
 }
+
 /*
     The nth-of-type(4) is used to get the 4th li element. (Which is the home element).
     A bold weight is then applied.
 */
-header li:nth-of-type(4){
+header li:first-of-type {
     font-weight: bold;
-    font-size: 1.15em;
 }
 
 
@@ -144,23 +144,25 @@ footer {
     margin-right: 3em;
 }
 
-footer>a{
+footer>a {
     text-decoration: none;
 }
 
-footer>a:link, footer>a:visited{
+footer>a:link,
+footer>a:visited {
     color: white;
 }
 
-footer>a:hover, footer>a:active{
+footer>a:hover,
+footer>a:active {
     color: rgba(216, 214, 214, 0.795);
 }
 
-footer>a.active{
+footer>a.active {
     color: rgba(233, 227, 227, 0.795);
 }
 
-footer>section{
+footer>section {
     color: rgba(233, 229, 229, 0.651);
     font-size: 0.8em;
 }
@@ -190,3 +192,32 @@ section>p.citation {
     margin-left: 1.5em;
     color: black;
 }
+
+/* /*
+    Aside Changes. (Experimental)
+*/
+
+/* aside.right {
+    width: 33%;
+    float: right;
+    margin: 0;
+    margin-right: 2%;
+}
+
+aside.right img {
+    max-width: 50%;
+    height: auto;
+    width: auto\9;
+    float: right;
+
+
+}
+
+section.left {
+    width: 66%;
+    float: left;
+    margin-left: 0%;
+    margin-right: 4%;
+}
+
+*/
