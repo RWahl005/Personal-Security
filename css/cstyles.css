@@ -1,0 +1,192 @@
+@charset "utf-8";
+/*
+    The css for all pages other than the index.html
+    Date: 10.4.18
+*/
+
+html {
+    /* background-image: linear-gradient(rgb(0, 89, 255), rgb(72, 129, 235), rgb(0, 89, 255)); 
+    background-color: rgb(88, 88, 88);
+    */
+    background-color: gray;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+/* 
+    Nav styles
+*/
+
+header{
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+header>nav {
+    display: table;
+    width: 100%;
+    margin-bottom: 0.01em;
+}
+
+header>nav a {
+    background-color: gray;
+    padding: 15px;
+    text-decoration: none;
+}
+
+header>nav>ul {
+    display: table-row;
+}
+
+header>nav>ul>li>a {
+    display: block;
+}
+
+header>nav>ul>li>a:link,
+header>nav>ul>li>a:visited {
+    color: white;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+header>nav>ul>li>a.active {
+    background-color: rgb(146, 143, 143);
+}
+
+header>nav>ul>li>a:hover {
+    background-color: darkgray;
+    padding: 15px;
+}
+
+header>nav>ul>li {
+    display: table-cell;
+    text-align: center;
+}
+
+header>nav>ul {
+    list-style-type: none;
+}
+/*
+    The nth-of-type(4) is used to get the 4th li element. (Which is the home element).
+    A bold weight is then applied.
+*/
+header li:nth-of-type(4){
+    font-weight: bold;
+    font-size: 1.15em;
+}
+
+
+/*
+    Section formatting
+*/
+section.content {
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-top: 0;
+    background-color: rgb(199, 198, 198);
+    height: 90%;
+    padding: 20px 50px 0px 50px;
+}
+
+section.content>h1 {
+    text-align: center;
+}
+
+section.content>p {
+    text-indent: 1.5em;
+    color: black;
+}
+
+section.content>p a {
+    text-decoration: none;
+    color: rgb(82, 80, 80);
+}
+
+/*
+    The image section
+*/
+section.img {
+    display: flex;
+    float: left;
+    padding-top: 0px;
+    background-color: rgb(199, 198, 198);
+    /* background-color: rgb(88, 88, 88); */
+}
+
+section.img img {
+    flex: 33.3%;
+    height: 50%;
+    width: 50%;
+    padding: 0px 20px;
+    padding-bottom: 30px;
+    text-align: center;
+
+
+}
+
+/*
+    Footer formatting
+*/
+
+footer {
+    width: 94.3%;
+    text-align: center;
+    background-color: gray;
+    color: white;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    position: fixed;
+    bottom: 0;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+footer>a{
+    text-decoration: none;
+}
+
+footer>a:link, footer>a:visited{
+    color: white;
+}
+
+footer>a:hover, footer>a:active{
+    color: rgba(216, 214, 214, 0.795);
+}
+
+footer>a.active{
+    color: rgba(233, 227, 227, 0.795);
+}
+
+footer>section{
+    color: rgba(233, 229, 229, 0.651);
+    font-size: 0.8em;
+}
+
+footer#non-bottom {
+    position: relative;
+}
+
+/*
+    Citations
+*/
+section.citation {
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-top: 0;
+    background-color: rgb(199, 198, 198);
+    height: 90%;
+    padding: 20px 50px 0px 50px;
+}
+
+section.citation>h1 {
+    text-align: center;
+}
+
+section>p.citation {
+    text-indent: 0em;
+    margin-left: 1.5em;
+    color: black;
+}
