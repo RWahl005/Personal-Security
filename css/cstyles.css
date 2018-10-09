@@ -156,7 +156,8 @@ section.citation>h1 {
     text-align: center;
 }
 
-section.citation>p {
-    text-indent: 1.5em;
+section>p.citation {
+    text-indent: 0em;
+    margin-left: 1.5em;
     color: black;
 }
