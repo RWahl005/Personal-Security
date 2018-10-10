@@ -13,6 +13,7 @@ html {
 
 html,
 body {
+    /* Changed the height so that the section can fill the entire page from top to bottom. */
     height: 100%;
 }
 
@@ -196,6 +197,6 @@ section>p.citation {
 /*
     Image formatting
 */
-img.right{
+img.right {
     float: right;
 }
