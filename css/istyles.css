@@ -6,6 +6,8 @@ html {
     height: 100%;
 }
 
+/* Nav Styles */
+/* All these styles are the basic ones that we used to change the color of the text, the background color of the nav element, changed the active visited hover and link elements to give them a uniform look. As well as taking away the decoration and formating the nav to give it a clean but easy to read look. */
 header>nav {
     display: table;
     width: 100%;
@@ -51,11 +53,12 @@ header>nav>ul {
     list-style-type: none;
 }
 
-header>nav>ul>li:first-of-type{
+header>nav>ul>li:first-of-type {
     font-weight: bold;
 }
 
-
+/* Body Styles */
+/* For the body the main elements we changed was how the text looked and the background color and the padding/border. When we chnaged the text we changed the color to black and changed the font family so it looked more creative in the h2 tag and the p tag. when i adjusted the padding/border in the body p.rightpad i did that so that so that the picture i floated over to the right would look in place when i shited the photo down  would have enough space to fit comfortably */
 body {
     text-align: left;
     color: black;
@@ -64,7 +67,8 @@ body {
     margin-right: 3em;
     height: 100%;
 }
-section{
+
+section {
     height: 90%;
     margin-top: 0;
 }
@@ -95,13 +99,13 @@ body p.rightpad {
 body img {
     float: right;
     margin-right: 12em;
-    margin-top: 5em;
+    margin-top: 3em;
 }
 
+
+/* footer elements */
+/* Basicly the important parts of this code is the relativity which we used to center the code to the bottom of the page and used a position fixed element to fix its position. */
 footer {
-    /* text-align: center;
-    background-color: gray;
-    padding-top: 1.5em; (Unused)*/
     width: 96%;
     text-align: center;
     background-color: gray;
