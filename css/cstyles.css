@@ -193,31 +193,9 @@ section>p.citation {
     color: black;
 }
 
-/* /*
-    Aside Changes. (Experimental)
+/*
+    Image formatting
 */
-
-/* aside.right {
-    width: 33%;
+img.right{
     float: right;
-    margin: 0;
-    margin-right: 2%;
 }
-
-aside.right img {
-    max-width: 50%;
-    height: auto;
-    width: auto\9;
-    float: right;
-
-
-}
-
-section.left {
-    width: 66%;
-    float: left;
-    margin-left: 0%;
-    margin-right: 4%;
-}
-
-*/
