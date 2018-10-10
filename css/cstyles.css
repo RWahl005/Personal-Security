@@ -22,52 +22,69 @@ body {
 */
 
 header {
+    /* Add margins (spacing) on the left and right of the header. */
     margin-left: 3em;
     margin-right: 3em;
 }
 
 header>nav {
+    /* Display table so it would display side by side. */
     display: table;
+    /* Makes the nav bar go all the way across the top. */
     width: 100%;
+    /* Changes the bottom margin. */
     margin-bottom: 0.01em;
 }
 
 header>nav a {
     background-color: gray;
+    /* Padding to increase the gray space around the buttons. */
     padding: 15px;
+    /* Removes the underline for the link */
     text-decoration: none;
 }
 
 header>nav>ul {
+    /* Sets it so the the links are side by side. */
     display: table-row;
 }
 
+/* An a within a li within a ul within a nav within a header with the display of block so that is is in the middle of the li */
 header>nav>ul>li>a {
     display: block;
 }
 
+/*
+    All visited and normal links within the header, nav, ul, li directly.
+*/
 header>nav>ul>li>a:link,
 header>nav>ul>li>a:visited {
     color: white;
+    /* Change the font size to 1.1em; */
     font-size: 1.1em;
     text-decoration: none;
 }
 
+/* An linkwith the class of active. (Represents the current page.) */
 header>nav>ul>li>a.active {
     background-color: rgb(146, 143, 143);
 }
 
+/* When a link is hover overed. */
 header>nav>ul>li>a:hover {
     background-color: darkgray;
     padding: 15px;
 }
 
 header>nav>ul>li {
+    /* Also allows the links to be side by side. */
     display: table-cell;
+    /* Centers the text within the button. */
     text-align: center;
 }
 
 header>nav>ul {
+    /* Removes the disc infront of the list item. */
     list-style-type: none;
 }
 
@@ -82,6 +99,7 @@ header li:first-of-type {
 
 /*
     Section formatting
+    (Contains content class)
 */
 section.content {
     margin-left: 3em;
@@ -89,18 +107,26 @@ section.content {
     margin-top: 0;
     background-color: rgb(199, 198, 198);
     height: 90%;
+    /* Sets all sides of the padding all in one go. */
     padding: 20px 50px 0px 50px;
 }
 
 section.content>h1 {
     text-align: center;
+    /* Use the Trebuchet font. (Made to agree with the index.html) */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Sans', Arial, sans-serif;
 }
 
 section.content>p {
+    /* Indents all of the paragraphs. */
     text-indent: 1.5em;
     color: black;
+    /* Sets the font to Times New Roman. Changed to agree with the index.html */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
 }
 
+/* Sets the links in here to a special format. */
 section.content>p a {
     text-decoration: none;
     color: rgb(82, 80, 80);
@@ -108,17 +134,22 @@ section.content>p a {
 
 /*
     The image section
+    (img class)
 */
 section.img {
+    /* Sets the display to flex. */
     display: flex;
+    /* Sets the image to the left side.*/
     float: left;
     padding-top: 0px;
     background-color: rgb(199, 198, 198);
-    /* background-color: rgb(88, 88, 88); */
+    /* (Unused) background-color: rgb(88, 88, 88); */
 }
 
 section.img img {
+    /* Allows images to be side by side. */
     flex: 33.3%;
+    /* Helps the image be side by side. (Image sizes are change out of css) */
     height: 50%;
     width: 50%;
     padding: 0px 20px;
@@ -139,6 +170,7 @@ footer {
     color: white;
     padding-top: 1em;
     padding-bottom: 1em;
+    /* Makes it be at the bottom of the page. */
     position: fixed;
     bottom: 0;
     margin-left: 3em;
@@ -148,6 +180,8 @@ footer {
 footer>a {
     text-decoration: none;
 }
+
+/* Special footer link formatting. */
 
 footer>a:link,
 footer>a:visited {
@@ -159,6 +193,7 @@ footer>a:active {
     color: rgba(216, 214, 214, 0.795);
 }
 
+/* If the link links the the current page. (Uses the active class) */
 footer>a.active {
     color: rgba(233, 227, 227, 0.795);
 }
@@ -168,12 +203,14 @@ footer>section {
     font-size: 0.8em;
 }
 
+/* If the footer is not needed on screen at all time, just at the bottom. */
 footer#non-bottom {
     position: relative;
 }
 
 /*
     Citations
+    (Citation class)
 */
 section.citation {
     margin-left: 3em;
@@ -189,6 +226,7 @@ section.citation>h1 {
 }
 
 section>p.citation {
+    /* removes the text indent for the citations. */
     text-indent: 0em;
     margin-left: 1.5em;
     color: black;
@@ -196,7 +234,9 @@ section>p.citation {
 
 /*
     Image formatting
+    (Class of right)
 */
 img.right {
+    /* Makes the image go right. */
     float: right;
 }
