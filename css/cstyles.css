@@ -113,12 +113,17 @@ section.content {
 
 section.content>h1 {
     text-align: center;
+    /* Use the Trebuchet font. (Made to agree with the index.html) */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Sans', Arial, sans-serif;
 }
 
 section.content>p {
     /* Indents all of the paragraphs. */
     text-indent: 1.5em;
     color: black;
+    /* Sets the font to Times New Roman. Changed to agree with the index.html */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
 }
 
 /* Sets the links in here to a special format. */
